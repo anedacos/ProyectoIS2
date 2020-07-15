@@ -19,7 +19,7 @@ script:
 notification:
   email:
     reciepients:
-      - alcivar372@gmail.com
+      - anedacos@espol.edu.ec
     on_sucsess: always
     on_failure: always
 
@@ -29,12 +29,12 @@ deploy:
   keep_history: true
   # COMMIT_MESSAGE: "Deploy del proyecto"
   api_key:
-    4f403f0f-f1e0-4b2e-b051-6fce3c0def0e
+    2667dee5-cb74-4b61-b622-ff0b1ed24d27
     # secure: "secretkey"
   app: interoc-frontend-dev
 
   on:
-    repo: josealcivar/interoc-frontend
+    repo: anedacos/ProyectoIS2
     # master: interoc-frontend-staging
     # production: interoc-frontend-production
   # local_dir: dist/
