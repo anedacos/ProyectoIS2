@@ -6,7 +6,9 @@ interface Viatico {
   value: string;
   viewValue: string;
 }
-
+/*
+Este componente crea viaticos y nos muestra el monto del mismo 
+*/
 @Component({
   selector: "app-create-or-edit",
   templateUrl: "./create-or-edit.component.html",
@@ -56,4 +58,9 @@ export class CreateOrEditComponent implements OnInit {
     let fecha_inicio;
     return true;
   }
+
+  sumar(a,b){
+    return a+b;
+  }
+
 }
