@@ -28,10 +28,4 @@ describe("CreateOrEditComponent", () => {
     let rango: boolean = component.validador_rango_fecha_viaticos();
     expect(rango).toBeTruthy();
   });
-
-  it("Valida la suma total del viatico", () => {
-    let rango: any = component.sumar(100,200);
-    expect(300).toEquals(rango);
-  });
-
 });
