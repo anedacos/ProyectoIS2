@@ -43,8 +43,8 @@ export class CreateOrEditComponent implements OnInit {
     { value: "0", viewValue: "NACIONAL" },
     { value: "1", viewValue: "INTERNACIONAL" },
   ];
-
-  constructor(private router: Router) {}
+  //private router: Router
+  constructor() {}
   title = "Crear viatico";
   ngOnInit() {
     this.fecha_socititud = moment().format("DD/MMM/YYYY");
@@ -73,9 +73,12 @@ export class CreateOrEditComponent implements OnInit {
     return true;
   }
 
+  /**
+   *  funcion para guardar viaticos
+   */
   guardar_viatico(): void {
     this.showNotification("top", "right", 2);
-    this.router.navigate(["/viaticos/"]);
+    // this.router.navigate(["/viaticos/"]);
     setTimeout(function () {}, 1000);
   }
 
